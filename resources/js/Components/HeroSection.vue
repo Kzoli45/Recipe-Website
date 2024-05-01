@@ -4,12 +4,13 @@
 
 
 <template>
-    <!-- Hero -->
 <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-4">
-  <!-- Grid -->
-  <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+  <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20">
     <div>
-      <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Explore a universe of <span class="text-yellow-200">Delicious</span></h1>
+      <blockquote class="p-4 mb-4 border-s-4 border-gray-300 bg-gray-50  dark:border-yellow-200 dark:bg-black">
+        <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"People who love to eat are always the best people."</p>
+      </blockquote>
+      <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Explore a universe of fine <span class="text-yellow-200">Taste</span></h1>
       <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">Recipes from all around the world provided by us and our lovely community. Find inspiration for every mealtime!</p>
 
       <!-- Buttons -->
@@ -27,8 +28,7 @@
           </div>
         </div>
       </div>
-      <!-- End Buttons -->
-      <!-- Stats -->
+
       <div class="stats shadow mt-4 bg-transparent gap-3">
         <div class="stat p-2">
             <div class="stat-title">Total Recipes</div>
@@ -48,15 +48,26 @@
             <div class="stat-desc">From 31 countries</div>
         </div>
         </div>
+
+        <div class="mt-6">
+        <div class="chat chat-start mb-3">
+          <div class="chat-bubble chat-bubble-primary">What should we eat today?</div>
+        </div>
+        <div class="chat chat-end mb-3">
+          <div class="chat-bubble chat-bubble-secondary">Hmm. not sure, but I wanna try something new</div>
+        </div>
+        <div class="chat chat-start">
+          <div class="chat-bubble chat-bubble-primary">Hey, I'll check out TasteVerse!</div>
+        </div>
+      </div>
     </div>
-    <!-- End Col -->
 
     <div class="w-full carousel rounded-box">
       <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+        <img src="https://www.foodiesfeed.com/wp-content/uploads/2021/01/fried-egg-and-guacamole-sandwiches.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
       </div> 
       <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2021/01/fried-egg-and-guacamole-sandwiches.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
       </div> 
       <div class="carousel-item w-full">
         <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
@@ -66,11 +77,14 @@
       </div> 
       <div class="carousel-item w-full">
         <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/12/pizza-salami-close-up.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+      </div>
+      <div class="carousel-item w-full">
+        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/12/pink-macarons.jpg" alt="Tilwind CSS Carousel component" class="w-full">
+      </div> 
+      <div class="carousel-item w-full">
+        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/05/freshly-prepared-beef-steak-with-vegetables.jpg" alt="Tilwind CSS Carousel component" class="w-full">
       </div> 
     </div>
-    <!-- End Col -->
   </div>
-  <!-- End Grid -->
 </div>
-<!-- End Hero -->
 </template>

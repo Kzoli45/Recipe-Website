@@ -6,7 +6,7 @@
 
 <template>
     <div class="lg:ml-5 sm:ml-2">
-        <span class="font-jersey font-bold text-white text-2xl">Taste<span class="text-yellow-200" >Verse</span></span>
+        <Link href="/" class="font-jersey font-bold text-white text-2xl">Taste<span class="text-yellow-200" >Verse</span></Link>
         </div>
         <nav v-if="canLogin" class="-mx-3 flex flex-1 justify-end">
            <Link
