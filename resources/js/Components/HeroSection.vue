@@ -10,13 +10,12 @@
 <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-4">
   <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20">
     <div>
-      <blockquote class="p-4 max-sm:pb-6 max-sm:p-0 mb-4 lg:border-s-4 max-sm:border-s-0 max-sm:border-b-4 border-gray-300 bg-gray-50  dark:border-yellow-200 dark:bg-black">
+      <blockquote class="p-4 max-sm:pb-6 max-sm:p-0 mb-4 md:border-s-4 max-sm:border-s-0 max-sm:border-b-4 border-blue-500 bg-gray-50  dark:border-yellow-200 dark:bg-black">
         <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"People who love to eat are always the best people."</p>
       </blockquote>
       <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Explore a universe of fine <span class="text-yellow-200">Taste</span></h1>
       <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">Recipes from all around the world provided by us and our lovely community. Find inspiration for every mealtime!</p>
 
-      <!-- Buttons -->
       <div class="mt-7 grid gap-3 w-full sm:inline-flex">
         <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
           Find Recipes
