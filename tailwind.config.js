@@ -18,6 +18,10 @@ export default {
                 jersey: ['Jersey 25', ...defaultTheme.fontFamily.sans]
             },
         },
+        screens: {
+            'xs': '300px',
+            ...defaultTheme.screens,
+          },
     },
 
     plugins: [forms, 

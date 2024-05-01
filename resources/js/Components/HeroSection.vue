@@ -1,5 +1,8 @@
 <script setup>
   import { Link } from '@inertiajs/vue3';
+  import { getImages } from '@/shared/images';
+
+  const images = getImages()
 </script>
 
 
@@ -7,7 +10,7 @@
 <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-4">
   <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20">
     <div>
-      <blockquote class="p-4 mb-4 border-s-4 border-gray-300 bg-gray-50  dark:border-yellow-200 dark:bg-black">
+      <blockquote class="p-4 max-sm:pb-6 max-sm:p-0 mb-4 lg:border-s-4 max-sm:border-s-0 max-sm:border-b-4 border-gray-300 bg-gray-50  dark:border-yellow-200 dark:bg-black">
         <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"People who love to eat are always the best people."</p>
       </blockquote>
       <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Explore a universe of fine <span class="text-yellow-200">Taste</span></h1>
@@ -49,7 +52,7 @@
         </div>
         </div>
 
-        <div class="mt-6">
+        <div class="mt-6 max-sm:hidden">
         <div class="chat chat-start mb-3">
           <div class="chat-bubble chat-bubble-primary">What should we eat today?</div>
         </div>
@@ -63,26 +66,8 @@
     </div>
 
     <div class="w-full carousel rounded-box">
-      <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2021/01/fried-egg-and-guacamole-sandwiches.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-      </div> 
-      <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-      </div> 
-      <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-      </div> 
-      <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/10/mediterranean-chickpea-salad.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-      </div> 
-      <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/12/pizza-salami-close-up.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-      </div>
-      <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/12/pink-macarons.jpg" alt="Tilwind CSS Carousel component" class="w-full">
-      </div> 
-      <div class="carousel-item w-full">
-        <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/05/freshly-prepared-beef-steak-with-vegetables.jpg" alt="Tilwind CSS Carousel component" class="w-full">
+      <div class="carousel-item w-full" v-for="image in images" :key="image.imageURL">
+        <img :src="image.imageURL" class="w-full" alt="Tailwind CSS Carousel component" />
       </div> 
     </div>
   </div>
