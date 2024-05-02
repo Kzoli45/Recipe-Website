@@ -37,9 +37,19 @@ const submit = () => {
             {{ status }}
         </div>
 
+        <div class="text-center mb-6 gap-3">
+            <span class="block text-2xl font-bold text-gray-800 dark:text-white" >Sign in</span>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
+            Don't have an account yet?
+            <Link class="text-blue-600 decoration-2 hover:underline font-medium dark:text-primary" :href="route('register')">
+            Sign up here
+            </Link>
+            </p>
+        </div>
+
         <form @submit.prevent="submit">
             <div>
-                <InputLabel for="email" value="Email" />
+                <InputLabel for="email" value="Email address" class="mb-3"/>
 
                 <TextInput
                     id="email"
@@ -54,8 +64,8 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
 
-            <div class="mt-4">
-                <InputLabel for="password" value="Password" />
+            <div class="mt-4 mb-4">
+                <InputLabel for="password" value="Password"/>
 
                 <TextInput
                     id="password"
@@ -70,9 +80,9 @@ const submit = () => {
             </div>
 
             <div class="block mt-4">
-                <label class="flex items-center">
+                <label class="flex items-center gap-4">
+                    <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">Remember Me</span>
                     <Checkbox name="remember" v-model:checked="form.remember" />
-                    <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">Remember me</span>
                 </label>
             </div>
 
