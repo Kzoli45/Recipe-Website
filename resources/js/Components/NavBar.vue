@@ -1,12 +1,13 @@
 <script setup>
     import { Link } from '@inertiajs/vue3'
+    import ThemeController from './ThemeController.vue'
 
     const { canLogin, canRegister } = defineProps(['canLogin', 'canRegister']);
 </script>
 
 <template>
     <div class="lg:ml-5 sm:ml-2">
-        <Link href="/" class="font-jersey font-bold text-white text-2xl">Taste<span class="text-yellow-200" >Verse</span></Link>
+        <Link href="/" class="font-jersey font-bold text-black dark:text-white text-2xl">Taste<span class=" text-primary dark:text-yellow-200" >Verse</span></Link>
         </div>
         <nav v-if="canLogin" class="-mx-3 flex flex-1 justify-end">
            <Link
@@ -21,6 +22,10 @@
                         v-if="canRegister"
                         :href="route('register')"
                         class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">Register</Link>
-                </template>
+                </template>  
+
+                <div class="flex items-center">
+                    <ThemeController/>
+                </div>
         </nav>
 </template>

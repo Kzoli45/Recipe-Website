@@ -28,4 +28,7 @@ export default {
         require('daisyui'), 
         require('preline/plugin'), 
         "prettier-plugin-tailwindcss"],
+
+    darkMode: 'selector',
+
 };

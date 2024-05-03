@@ -13,7 +13,7 @@
       <blockquote class="p-4 max-sm:pb-6 max-sm:p-0 mb-4 md:border-s-4 max-sm:border-s-0 max-sm:border-b-4 border-blue-500 bg-gray-50  dark:border-yellow-200 dark:bg-black">
         <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"People who love to eat are always the best people."</p>
       </blockquote>
-      <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Explore a universe of fine <span class="text-yellow-200">Taste</span></h1>
+      <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Explore a universe of fine <span class="text-primary dark:text-yellow-200">Taste</span></h1>
       <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">Recipes from all around the world provided by us and our lovely community. Find inspiration for every mealtime!</p>
 
       <div class="mt-7 grid gap-3 w-full sm:inline-flex">
@@ -31,10 +31,10 @@
         </div>
       </div>
 
-      <div class="stats shadow mt-4 bg-transparent gap-3">
+      <div class="stats mt-4 bg-transparent gap-3">
         <div class="stat p-2">
             <div class="stat-title">Total Recipes</div>
-            <div class="stat-value text-yellow-200">300+</div>
+            <div class="stat-value text-yellow-400 dark:text-yellow-200">300+</div>
             <div class="stat-desc">and counting...</div>
         </div>
         

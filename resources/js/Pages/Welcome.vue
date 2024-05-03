@@ -3,6 +3,7 @@ import { Head, Link } from '@inertiajs/vue3';
 import HeroSection from '../Components/HeroSection.vue'
 import NavBar from '@/Components/NavBar.vue';
 
+
 defineProps({
     canLogin: {
         type: Boolean,
@@ -44,7 +45,7 @@ function handleImageError() {
 
                 <footer class="footer footer-center p-4 text-base-content bg-transparent">
                     <aside>
-                    <p>Copyright © 2024 - All right reserved by <span class="text-yellow-200">TasteVerse</span> Company Ltd</p>
+                    <p>Copyright © 2024 - All right reserved by <span class="text-primary dark:text-yellow-200">TasteVerse</span> Company Ltd</p>
                     </aside>
                 </footer>
             </div>
