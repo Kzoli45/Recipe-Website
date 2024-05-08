@@ -10,7 +10,7 @@
 <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-4">
   <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20">
     <div>
-      <blockquote class="p-4 max-sm:pb-6 max-sm:p-0 mb-4 md:border-s-4 max-sm:border-s-0 max-sm:border-b-4 border-blue-500 bg-gray-50  dark:border-yellow-200 dark:bg-black">
+      <blockquote class="p-4 max-sm:pb-6 max-sm:p-0 mb-4 sm:border-s-4 max-sm:border-s-0 max-sm:border-b-4 border-primary bg-gray-50  dark:border-yellow-200 dark:bg-black">
         <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"People who love to eat are always the best people."</p>
       </blockquote>
       <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Explore a universe of fine <span class="text-primary dark:text-yellow-200">Taste</span></h1>

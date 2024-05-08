@@ -23,7 +23,7 @@ const showingNavigationDropdown = ref(false);
                     <div class="flex justify-between h-16">
                         <div class="flex">
                             <!-- Logo -->
-                            <div class="shrink-0 flex items-center">
+                            <div class="shrink-0 flex items-center max-sm:absolute max-sm:top-2 max-sm:left-2">
                                 <Link href="/">
                                     <ApplicationLogo/>
                                 </Link>
