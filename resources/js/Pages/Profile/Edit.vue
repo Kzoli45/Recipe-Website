@@ -4,6 +4,7 @@ import DeleteUserForm from './Partials/DeleteUserForm.vue';
 import UpdatePasswordForm from './Partials/UpdatePasswordForm.vue';
 import UpdateProfileInformationForm from './Partials/UpdateProfileInformationForm.vue';
 import UserExperience from '@/Components/UserExperience.vue';
+import MoreInformation from '@/Components/MoreInformation.vue';
 import { Head } from '@inertiajs/vue3';
 
 defineProps({
@@ -32,6 +33,10 @@ defineProps({
                         :status="status"
                         class="max-w-xl"
                     />
+                </div>
+
+                <div class="p-4 sm:p-8 bg-white dark:bg-neutral-900 shadow sm:rounded-lg">
+                    <MoreInformation/>
                 </div>
 
                 <div  class="p-4 sm:p-8 bg-white dark:bg-neutral-900 shadow sm:rounded-lg">

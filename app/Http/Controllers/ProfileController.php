@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProfileUpdateRequest;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 use Inertia\Response;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Requests\ProfileUpdateRequest;
+use App\Http\Requests\MoreInformationRequest;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 
 class ProfileController extends Controller
 {
@@ -40,6 +42,14 @@ class ProfileController extends Controller
         return Redirect::route('profile.edit');
     }
 
+    public function updateMoreInformation(MoreInformationRequest $request): RedirectResponse
+    {
+        $request->user()->fill($request->validated());
+
+        $request->user()->save();
+
+        return Redirect::route('profile.edit');
+    }
     /**
      * Delete the user's account.
      */
